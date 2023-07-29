@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
 @section('judul')
+    <h1 class="mb-5">{{ $title }}</h1>
+
     @foreach ($posts as $post)
         <article class="mb-5 border-bottom pb-3">
             <h2><a href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h2>
